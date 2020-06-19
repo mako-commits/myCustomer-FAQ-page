@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Medium"),
+    url("/assets/fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Medium "),
+    url("/assets/fonts/Gilroy-Bold.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #e0e0e0;
+  padding: 0px 0px;
+}
+
+.top {
+  background: #F3F3F3;
+  padding: 50px 50px;
+}
+
+.top-title {
+  text-transform: capitalize;
+  text-align: center;
+  color: #00098A;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 48px;
+}
+
+
+.top-btn {
+  border: 1px solid #FF8C5F;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.search-btn {
+  color: #FF8C5F;
+  background: transparent;
+}
+
+
+.form-control {
+  margin-bottom: 30px;
+}
+
+
+.panel-body {
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 202.3%;
+  color: #000000;
+}
+
+.panel-group {
+  margin: 0px 0px;
+  padding: 0px 40px;
+}
+
+.panel-heading {
+  border: none;
+  background-color: white;
+  color: #00098A;
+}
+
+.panel-title {
+  position: relative;
+  background: #FFFFFF;
+  height: 50px;
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 167.8%;
+  border: none;
+  cursor: pointer;
+  color: #00098A;
+}
+
+.panel-title::after {
+  content: "\f107";
+  color: #00098A;
+  top: -2px;
+  right: 0px;
+  position: absolute;
+  font-family: "FontAwesome"
+}
+
+.panel-title[aria-expanded="true"]::after {
+  content: "\f106";
+}
